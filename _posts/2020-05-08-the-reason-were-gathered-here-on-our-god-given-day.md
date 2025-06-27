@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The reason we're gathered here on our God-given day
+title: Calculaing volumns of planets
 tags: [frontpage, jekyll, blog]
 image: "/posts/19.jpg"
 ---
