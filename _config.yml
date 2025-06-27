@@ -8,14 +8,14 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #-------------------------------
 # About Section
 subtitle: Data Science <span style="color:#f58506"> Portfolio </span>
-location: "London, UK"
-resume_url: "https://vidhyav656.github.io"
+location: "Coraopolis, PA"
+resume_url: /docs/resume.docx
 avatar_image: /img/avatar.jpg
 
 #-------------------------------
 # Contact links
-linkedln: "https://linkedln.com/#" # Add your linkedln handle
-github: "https://github.com/#"  # Add your github handle
+linkedln: "https://linkedln.com/gajapriya-subbiah" # Add your linkedln handle
+github: "https://github.com/GajapriyaSubbiah"  # Add your github handle
 
 #-------------------------------
 # Build settings
