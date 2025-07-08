@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Calculating Planet Volumes
-image: "/posts/planetary-system.jpeg"
+image: "/posts/planetary-system.jpg"
 tags: [Numpy, PlannetVolumes]
 ---
 
