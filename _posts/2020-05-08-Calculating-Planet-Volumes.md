@@ -65,10 +65,3 @@ I hoped you enjoyed learning about to calculate volumes of all planets, and one 
 ---
 
 ###### The reason why its so fast method because a single NumPy array can only contain a single data type whereas say a list or a tuple could contain many different datatypes, and this restriction to only contain a single datatype has a huge benefit NumPy has enormous computation speed than a python for loop do.
-
-
-...where we firstly force the identification of the lowest number in the number_range into our prime variable, and following that we remove it.
-
-However, because we have to sort the list for each iteration of the loop in order to get the minimum value, it's slightly slower than what we saw with pop()!
-
-
