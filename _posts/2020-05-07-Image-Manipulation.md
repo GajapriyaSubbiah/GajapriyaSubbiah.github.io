@@ -50,14 +50,14 @@ Now let's create a camaro object to read our image and finds our shape of the im
     vertical_flip = camaro[::-1,:,:]
     plt.imshow(vertical_flip)
     plt.show()
-    io.imsave("vertical_flip.jpg", cropped)
+    io.imsave("vertical_flip.jpg", vertical_flip)
 
 ![alt](../img/posts/vertical_flip.jpg)
     
     horizontal_flip = camaro[:,::-1,:]
     plt.imshow(horizontal_flip)
     plt.show()
-    io.imsave("horizontal_flip.jpg", cropped)
+    io.imsave("horizontal_flip.jpg", horizontal_flip)
 
  ![alt](../img/posts/horizontal_flip.jpg)
 
@@ -74,7 +74,7 @@ We now want to fill in the rows and columns with the values for only the red cha
     red[:,:,0] = camaro[:,:,0]
     plt.imshow(red)
     plt.show()
-    io.imsave("red.jpg", cropped)
+    io.imsave("red.jpg", red)
 
  ![alt](../img/posts/red.jpg)
  
@@ -83,7 +83,7 @@ We now want to fill in the rows and columns with the values for only the red cha
     green[:,:,1] = camaro[:,:,1]
     plt.imshow(green)
     plt.show()
-    io.imsave("green.jpg", cropped)
+    io.imsave("green.jpg", green)
 
  ![alt](../img/posts/green.jpg)
     
@@ -92,7 +92,7 @@ We now want to fill in the rows and columns with the values for only the red cha
     blue[:,:,2] = camaro[:,:,2]
     plt.imshow(blue)
     plt.show()
-    io.imsave("blue.jpg", cropped)
+    io.imsave("blue.jpg", blue)
 
  ![alt](../img/posts/blue.jpg)
 
@@ -103,4 +103,6 @@ We now want to fill in the rows and columns with the values for only the red cha
     vertical_stack = np.vstack((red,green,blue))
     plt.imshow(vertical_stack)
     plt.show()
-    io.imsave("vertical_stack.jpg", cropped)
+    io.imsave("vertical_stack.jpg", vertical_stack)
+
+How :cool: is that :sunglasses:!!!
