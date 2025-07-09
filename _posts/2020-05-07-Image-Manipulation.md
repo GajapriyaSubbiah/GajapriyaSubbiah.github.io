@@ -43,7 +43,7 @@ Now let's create a camaro object to read our image and finds our shape of the im
     plt.imshow(cropped)
     plt.show()
 
-![alt]("posts//cropped.jpg")
+![alt]("../blob/master/img/posts/cropped.jpg?raw=true")
 
 ##### To flip image vertically and horizontally
 
