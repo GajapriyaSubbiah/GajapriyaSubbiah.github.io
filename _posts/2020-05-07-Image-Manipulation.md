@@ -105,4 +105,4 @@ We now want to fill in the rows and columns with the values for only the red cha
     plt.show()
     io.imsave("vertical_stack.jpg", vertical_stack)
 
-How :cool: is that :sunglasses:!!!
+How 🆒 is that 😎!!!
