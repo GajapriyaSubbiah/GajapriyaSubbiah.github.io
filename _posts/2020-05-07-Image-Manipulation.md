@@ -44,7 +44,6 @@ Now let's create a camaro object to read our image and finds our shape of the im
     plt.show()
 
 ![alt](../img/posts/vertical_flip.jpg)
-(../blob/master/img/posts/cropped.jpg?raw=true)
 
 ##### To flip image vertically and horizontally
 
@@ -53,14 +52,14 @@ Now let's create a camaro object to read our image and finds our shape of the im
     plt.show()
     io.imsave("vertical_flip.jpg", cropped)
 
-![alt](../posts/vertical_flip.jpg)
+![alt](../img/posts/vertical_flip.jpg)
     
     horizontal_flip = camaro[:,::-1,:]
     plt.imshow(horizontal_flip)
     plt.show()
     io.imsave("horizontal_flip.jpg", cropped)
 
- ![alt](../posts/horizontal_flip.jpg)
+ ![alt](../img/posts/horizontal_flip.jpg)
 
 ##### To colour our image
 
@@ -77,7 +76,7 @@ We now want to fill in the rows and columns with the values for only the red cha
     plt.show()
     io.imsave("red.jpg", cropped)
 
- ![alt](../posts/red.jpg)
+ ![alt](../img/posts/red.jpg)
  
     green = np.zeros(camaro.shape, dtype = "uint8")
     
@@ -86,7 +85,7 @@ We now want to fill in the rows and columns with the values for only the red cha
     plt.show()
     io.imsave("green.jpg", cropped)
 
- ![alt](../posts/green.jpg)
+ ![alt](../img/posts/green.jpg)
     
     blue = np.zeros(camaro.shape, dtype = "uint8")
     
@@ -95,11 +94,11 @@ We now want to fill in the rows and columns with the values for only the red cha
     plt.show()
     io.imsave("blue.jpg", cropped)
 
- ![alt](../posts/blue.jpg)
+ ![alt](../img/posts/blue.jpg)
 
 ##### To stack all of our images
 
- ![alt](../posts/vertical_stack.jpg)
+ ![alt](../img/posts/vertical_stack.jpg)
 
     vertical_stack = np.vstack((red,green,blue))
     plt.imshow(vertical_stack)
