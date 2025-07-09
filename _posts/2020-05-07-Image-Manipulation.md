@@ -1,36 +1,52 @@
 ---
 layout: post
 title: Image Manipulation
-tags: [NumPy,]
+tags: [NumPy, Array operations]
 image: "/posts/camaro.jpg"
 ---
 
-Lorem ipsum dolor sit amet, vix ut case porro facilisis, alia possit neglegentur vis te. Has cu eirmod abhorreant, vel civibus efficiantur cu. Eu summo elitr vix, iusto putant maluisset per ut, ne etiam vivendum adipisci vel. Vis omnis tempor accusam ei, justo perpetua liberavisse cu qui. Saperet aliquando adipiscing ius ne, ne facer euripidis est. Pro mundi nostrum suavitate et.
+Let's import the necessary packages to dive in!
+import numpy,
+import scikit-image as io - allows to read an image
+import matplotlib - to visualize the image
 
-Vix dico eius nominati cu, ex zril commodo fuisset mea. Habeo adhuc audiam ius no. In quis virtute officiis has. Vix ad honestatis accommodare, quis virtute et sit, pertinax expetenda eam id. Duo an fuisset delectus dissentias, justo altera ea per.
+**io.imread** functionality will read an image into array of pixels
+In an color image we have intensity values for each of the three color channels red, green, blue.
 
-##### Todo
+**Shape** attribute display the how the image looks in a structure like much width/tall/dimenional array(1d, 2d, 3d).
 
-Duis id ante elit. Aliquam quis tellus id orci eleifend finibus. Donec consequat justo ligula, eget sodales purus hendrerit at.
+Now let's create a camaro object to read our and finds our shape of the image.
 
-1. Ut at interdum nunc. Maecenas commodo turpis quis elementum gravida.
-2. Nunc ac sapien tellus. Quisque risus enim, tempus eget porttitor in, pellentesque vel urna.
-    Donec nibh massa, rutrum a sollicitudin eu,
-lacinia in lorem.
+>camaro = io.imread("camaro.jpg")
+plt.imshow(camaro)
+plt.show()
 
-##### Graphic design
+##### Array operations
 
-> Graphic design is the paradise of individuality, eccentricity, heresy, abnormality, hobbies, and humors. — George Santayana
+> Slicing an image - specify the axis
+> vertical stack - stack an array in a vertical order
+> flip the array - start, -stop, -step logic to exactly how we want to flip. For instance, -1 indicates to reverse the image
 
-Vim te case nihil oblique, has partem interpretaris ne, ad admodum accusamus nam. Usu utinam dissentias referrentur ne, vim accusam voluptua pertinacia no. Est no posse utinam inermis, brute errem mentitum et ius, te prompta albucius quo. In pro simul soleat regione.
+##### Cropped Image
 
-![alt](https://images.unsplash.com/photo-1433785567155-bf5530cab72c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=1348aea714b9493fa61a09a8c01113e6)
+    cropped_array = img_array[start_row:end_row, start_col:end_col, :]
+    # The ':', in the third dimension is for retaining all color channels (if present)
 
-Ne reque offendit singulis mea, ad eos ferri doming nostrud. Duis suscipit usu ut, fuisset pericula ex est, et porro prompta his. Audire definiebas voluptatibus et duo, aperiam ocurreret ad nec. Vel ad nostrud principes. Ad liber congue iracundia sed, eirmod erroribus eam te, has veniam epicurei ea.
+>cropped = camaro[0:500,:,:]
+plt.imshow(cropped)
+plt.show()
 
-Pri probo alterum aliquando an. Duo appetere laboramus intellegat ea, ex suas diam exerci vix. Mel simul debitis id, est nusquam fuisset mentitum in. Te mei iudico iisque.
+cropped = camaro[:,400:1000,:]
+plt.imshow(cropped)
+plt.show()
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec diam augue, luctus a lacus vitae, ullamcorper interdum lacus. Sed consequat, nisi non mattis euismod, mi metus venenatis lacus, id feugiat orci mi eu urna. Donec condimentum lacus eget nibh consectetur, ac venenatis erat tristique. Nunc eros metus, venenatis in cursus ut, aliquam eu diam.
+cropped = camaro[350:1100,200:1400,:]
+plt.imshow(cropped)
+plt.show()
+
+![alt](/posts/cropped.jpg)
+
+
 
 ![alt](https://images.unsplash.com/photo-1429734160945-4f85244d6a5a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=0e46d4b45ffdd302bc6b44ec8917fe83)
 
